@@ -1,5 +1,5 @@
 import React from "react";
-import DashboardLayout from "../dashboardLayout";
+import DashboardLayout from "../DashboardLayout";
 import ClientListHeader from "@/components/dashboard/clientList/ClientListHeader";
 import ClientWorkOutCard from "@/components/dashboard/home/ClientWorkOutCard";
 import workoutData from "@/data/workout.json";
