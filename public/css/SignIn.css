@@ -1,0 +1,294 @@
+.SignUpPage {
+  width: 100%;
+  min-height: 100vh;
+}
+.SignUpPageImageContainer {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 630px;
+}
+.SignUpImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.inspirelogo {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  transform: translateX(50%);
+}
+.signUpMainContent {
+  padding: 3rem 2rem;
+}
+.signHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.signBody {
+  margin-top: 2rem;
+  text-align: center;
+}
+.SignUpPage .lgHeading {
+  width: fit-content;
+  margin: 0 auto;
+}
+.FlexFitlogoline {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(100%, -50%);
+}
+.signBody .mainText {
+  margin: 0.3rem 0;
+  font-size: 1.1rem;
+}
+.signBtnWrrper {
+  margin-top: 12rem;
+}
+.signBtnWrrper .mainBtn {
+  margin-bottom: 1rem;
+}
+
+/* clientCard */
+.clientCardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.clientCard {
+  flex: 1;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #c3c3c3;
+  background: #ebebeb;
+  border-radius: 10px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease-in;
+}
+.clientCard.active {
+  background-color: #0a0a0a;
+}
+.clientCardImageWrapper {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.clientCard .mdHeading {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 0.3rem;
+}
+.clientCard.active .mdHeading {
+  color: var(--whitecolor);
+}
+.checkCardCircle {
+  border: 1px dashed #000000;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+/*----------------------------- sinInPage --------------------- */
+.sinInPage .SignUpPageImageContainer {
+  right: -0.8rem;
+  left: auto;
+}
+.sinInPage .SignUpPageImageContainer .inspirelogo {
+  right: auto;
+  left: 0;
+  transform: translateX(-50%);
+}
+.sinInPage .SignUpPageImageContainer .signHeader .mainText {
+  margin-left: 0rem;
+}
+.sinInPage .signBody {
+  margin-top: 4rem;
+}
+
+/* socialAuthBtns */
+.socialAuthBtns {
+  margin: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.socialAuthBtns .mainBtn {
+  border-color: #dedede;
+  font-size: 0.9rem;
+  width: fit-content;
+  text-transform: capitalize;
+}
+.socialAuthBtns .mainBtn.googleBtn {
+  border-color: #20dc49;
+}
+
+/* orlineContainer */
+.orlineContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.4rem;
+  margin: 2rem 0;
+}
+.orline {
+  flex: 1;
+  height: 2px;
+  background: #dbdbdb;
+}
+.orlineContainer .mainText {
+  font-size: 0.84rem;
+  font-weight: 400;
+}
+
+/* inputHolder */
+.inputHolder {
+  border: 1px solid #dbdbdb;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+}
+.inputLable {
+  display: block;
+  background: var(--whitecolor);
+  padding: 0.05rem 0.2rem;
+  width: fit-content;
+  position: absolute;
+  font-size: 16px;
+  font-weight: 400;
+  color: #00000060;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+}
+.inputArea {
+  width: 100%;
+  padding: 0.4rem 0rem;
+  border: none;
+  outline: none;
+}
+.inputHolder:focus-within .inputLable,
+.inputArea:not(:placeholder-shown) + .inputLable {
+  top: 0%; 
+}
+.inputHolder:focus-within {
+  border-color: #20dc49;
+}
+inputArea::-webkit-outer-spin-button,
+.inputArea::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* singInForm */
+.singInForm .inputHolder {
+  margin-bottom: 1rem;
+}
+.toggleFormContainer {
+  margin: 1.4rem 0;
+  margin-bottom: 2rem;
+}
+.form-check-input.toggleSwitch {
+  cursor: pointer;
+  width: 40px;
+  height: 21px;
+  background-color: #e9ecef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  border: none;
+}
+.form-check-input.toggleSwitch:checked {
+  background-color: var(--themecolor);
+  border-color: var(--themecolor);
+}
+.form-check-input.toggleSwitch:focus {
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+.recoverLink {
+  color: #ff4d4f;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 0.875rem;
+  transition: color 0.15s ease-in-out;
+}
+.recoverLink:hover {
+  color: #ff7875;
+}
+
+/* sign Up */
+.optionInputHolder .inputLable {
+  top: 0;
+}
+/* backLink */
+.backLink {
+  display: block;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: var(--backcolor);
+  font-weight: 400;
+  cursor: pointer;
+}
+.backArrow {
+  transition: all 0.2s ease;
+}
+.backLink:hover .backArrow {
+  margin-right: 1rem;
+}
+
+/* upload Input */
+.upload-container {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  padding: 1rem 0 !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+.upload-container:hover {
+  border-color: var(--themecolor);
+}
+.upload-container.drag-active {
+  border-color: #0d6efd;
+  background-color: rgba(13, 110, 253, 0.05);
+}
+.upload-text {
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: 400;
+}
+.upload-icon {
+  color: #6c757d;
+}
+.selected-files {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* 
+  .passwordeyeIcon{
+    */
+.passwordeyeIcon {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #00000054;
+  font-size: 1.4rem;
+}

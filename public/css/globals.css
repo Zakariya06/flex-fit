@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+:root {
+  --backcolor: #000000;
+  --whitecolor: #ffffff;
+  --themecolor: #20dc49;
+}
+body {
+  font-family: "Inter", serif;
+}
+select {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mainText {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--backcolor);
+  margin: 0;
+}
+.mainLink {
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--themecolor);
+  font-size: 1rem;
+}
+.mainLink:hover {
+  text-decoration: underline;
+}
+.lgHeading {
+  font-size: 3.2rem;
+  color: var(--backcolor);
+  font-weight: 500;
+  position: relative;
+  margin: 0;
+}
+.lgHeading span {
+  color: var(--themecolor);
+}
+.mainBtn {
+  border: 1px solid var(--backcolor);
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: var(--whitecolor);
+  border-radius: 10px;
+  transition: all 0.2s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+.mainBtn:hover,
+.mainBtn.active {
+  background: var(--themecolor);
+  color: var(--backcolor);
+  border-color: var(--themecolor);
+}
+.mainBtn.active:hover {
+  background: var(--whitecolor);
+  border-color: var(--backcolor);
+}

@@ -1,0 +1,198 @@
+[
+    {
+      "workoutPlan": "Strength Training",
+      "weeks": "6 Weeks",
+      "workoutList": {
+        "images": [
+          {
+            "url": "/assets/full_body.png",
+            "category": "Full body"
+          },
+          {
+            "url": "/assets/core.png",
+            "category": "Core"
+          },
+          {
+            "url": "/assets/chest.png",
+            "category": "Chest"
+          }
+        ],
+        "more": null
+      },
+      "assignedTo": {
+        "clients": 134,
+        "images": [
+          "/assets/profile1.png",
+          "/assets/profile2.png",
+          "/assets/profile3.png"
+        ],
+        "more": "3"
+      }
+    },
+    {
+      "workoutPlan": "Strength Training",
+      "weeks": "14 Weeks",
+      "workoutList": {
+        "images": [
+          {
+            "url": "/assets/full_body.png",
+            "category": "Full body"
+          },
+          {
+            "url": "/assets/core.png",
+            "category": "Core"
+          },
+          {
+            "url": "/assets/chest.png",
+            "category": "Chest"
+          },
+          {
+            "url": "/assets/six_plus.png",
+            "category": "+3"
+          }
+        ],
+        "more": "+3"
+      },
+      "assignedTo": {
+        "clients": 43,
+        "images": [
+          "/assets/profile1.png",
+          "/assets/profile2.png",
+          "/assets/profile3.png"
+        ],
+        "more": "3"
+      }
+    },
+    {
+      "workoutPlan": "Strength Training",
+      "weeks": "30 Weeks",
+      "workoutList": {
+        "images": [
+          {
+            "url": "/assets/full_body.png",
+            "category": "Full body"
+          },
+          {
+            "url": "/assets/core.png",
+            "category": "Core"
+          },
+          {
+            "url": "/assets/chest.png",
+            "category": "Chest"
+          },
+          {
+            "url": "/assets/six_plus.png",
+            "category": "+8"
+          }
+        ],
+        "more": "8"
+      },
+      "assignedTo": {
+        "clients": 321,
+        "images": [
+          "/assets/profile1.png",
+          "/assets/profile2.png",
+          "/assets/profile3.png"
+        ],
+        "more": "3"
+      }
+    },
+    {
+      "workoutPlan": "Muscle Building",
+      "weeks": "6 Weeks",
+      "workoutList": {
+        "images": [
+          {
+            "url": "/assets/full_body.png",
+            "category": "Full body"
+          },
+          {
+            "url": "/assets/core.png",
+            "category": "Core"
+          },
+          {
+            "url": "/assets/chest.png",
+            "category": "Chest"
+          }
+        ],
+        "more": null
+      },
+      "assignedTo": {
+        "clients": 134,
+        "images": [
+          "/assets/profile1.png",
+          "/assets/profile2.png",
+          "/assets/profile3.png"
+        ],
+        "more": "3"
+      }
+    },
+    {
+      "workoutPlan": "Muscle Building",
+      "weeks": "14 Weeks",
+      "workoutList": {
+        "images": [
+          {
+            "url": "/assets/full_body.png",
+            "category": "Full body"
+          },
+          {
+            "url": "/assets/core.png",
+            "category": "Core"
+          },
+          {
+            "url": "/assets/chest.png",
+            "category": "Chest"
+          },
+          {
+            "url": "/assets/six_plus.png",
+            "category": "+3"
+          }
+        ],
+        "more": "3"
+      },
+      "assignedTo": {
+        "clients": 43,
+        "images": [
+          "/assets/profile1.png",
+          "/assets/profile2.png",
+          "/assets/profile3.png"
+        ],
+        "more": "3"
+      }
+    },
+    {
+      "workoutPlan": "Muscle Building",
+      "weeks": "30 Weeks",
+      "workoutList": {
+        "images": [
+          {
+            "url": "/assets/full_body.png",
+            "category": "Full body"
+          },
+          {
+            "url": "/assets/core.png",
+            "category": "Core"
+          },
+          {
+            "url": "/assets/chest.png",
+            "category": "Chest"
+          },
+          {
+            "url": "/assets/six_plus.png",
+            "category": "+8"
+          }
+        ],
+        "more": "8"
+      },
+      "assignedTo": {
+        "clients": 321,
+        "images": [
+          "/assets/profile1.png",
+          "/assets/profile2.png",
+          "/assets/profile3.png"
+        ],
+        "more": "3"
+      }
+    }
+  ]

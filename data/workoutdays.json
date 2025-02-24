@@ -1,0 +1,125 @@
+[
+    {
+      "day": "Monday",
+      "exercises": [
+        {
+          "exercise": "Bench Press",
+          "sets": "4 set x 10 reps",
+          "weight": "- 15 Kg/33 Lbs"
+        },
+        {
+          "exercise": "Incline Dumbbell Press",
+          "sets": "3 set x 12 reps"
+        },
+        {
+          "exercise": "Chest Flys",
+          "sets": "3 set x 12 reps"
+        },
+        {
+          "exercise": "Push-Ups",
+          "sets": "3 set x 15 reps"
+        }
+      ]
+    },
+    {
+      "day": "Tuesday",
+      "exercises": [
+        {
+          "exercise": "Tricep Dips",
+          "sets": "4 set x 12 reps"
+        },
+        {
+          "exercise": "Overhead Tricep Extension",
+          "sets": "3 set x 12 reps"
+        },
+        {
+          "exercise": "Skull Crushers",
+          "sets": "3 set x 12 reps"
+        },
+        {
+          "exercise": "Close-Grip Bench Press",
+          "sets": "3 set x 15 reps"
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "exercises": [
+        {
+          "exercise": "Deadlifts",
+          "sets": "4 set x 12 reps"
+        },
+        {
+          "exercise": "Barbell Rows",
+          "sets": "3 set x 12 reps"
+        },
+        {
+          "exercise": "Pull-Ups",
+          "sets": "3 set x 12 reps"
+        }
+      ]
+    },
+    {
+      "day": "Thursday",
+      "exercises": [
+        {
+          "exercise": "Barbell Curls",
+          "sets": "4 set x 12 reps"
+        },
+        {
+          "exercise": "Hammer Curls",
+          "sets": "3 set x 12 reps"
+        },
+        {
+          "exercise": "Concentration Curls",
+          "sets": "3 set x 12 reps"
+        },
+        {
+          "exercise": "Preacher Curls",
+          "sets": "3 set x 15 reps"
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "exercises": [
+        {
+          "exercise": "Overhead Press",
+          "sets": "4 set x 12 reps"
+        },
+        {
+          "exercise": "Lateral Raises",
+          "sets": "3 set x 12 reps"
+        },
+        {
+          "exercise": "Front Raises",
+          "sets": "3 set x 12 reps"
+        },
+        {
+          "exercise": "Shrugs",
+          "sets": "3 set x 15 reps"
+        }
+      ]
+    },
+    {
+      "day": "Saturday",
+      "exercises": [
+        {
+          "exercise": "Squats",
+          "sets": "4 set x 12 reps"
+        },
+        {
+          "exercise": "Romanian Deadlifts",
+          "sets": "3 set x 12 reps"
+        },
+        {
+          "exercise": "Bulgarian Split Squats",
+          "sets": "3 set x 12 reps"
+        },
+        {
+          "exercise": "Calf Raises",
+          "sets": "3 set x 12 reps"
+        }
+      ]
+    }
+  ]

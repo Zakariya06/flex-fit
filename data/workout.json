@@ -1,0 +1,140 @@
+{
+  "workouts": [
+    {
+      "id": 1,
+      "userName": "John Doe",
+      "timeAgo": "2 h ago",
+      "user_icon": "/assets/client_user_1.png",
+      "status": "Feedback Pending",
+      "planType": "Strength Training",
+      "weekInfo": "Week 3/6",
+      "assignedWorkouts": [
+        { "type": "Full body", "icon": "/assets/full_body.png" },
+        { "type": "Core", "icon": "/assets/core.png" },
+        { "type": "Chest", "icon": "/assets/chest.png" }
+      ],
+      "weekPerformance": [
+        { "day": "M", "value": 45 },
+        { "day": "T", "value": 75 },
+        { "day": "W", "value": 15 },
+        { "day": "T", "value": 65 },
+        { "day": "F", "value": 55 },
+        { "day": "S", "value": 25 },
+        { "day": "S", "value": 35 }
+      ]
+    },
+    {
+      "id": 2,
+      "userName": "John Doe",
+      "timeAgo": "2 h ago",
+      "user_icon": "/assets/client_user_2.png",
+      "status": "Active",
+      "planType": "Muscle Building",
+      "weekInfo": "Week 1/24",
+      "assignedWorkouts": [
+        { "type": "Full body", "icon": "/assets/full_body.png" },
+        { "type": "Core", "icon": "/assets/core.png" },
+        { "type": "Chest", "icon": "/assets/chest.png" },
+        { "type": "+6", "icon": "/assets/six_plus.png" }
+      ],
+      "weekPerformance":  [
+        { "day": "M", "value": 80 },
+        { "day": "T", "value": 50 },
+        { "day": "W", "value": 95 },
+        { "day": "T", "value": 30 },
+        { "day": "F", "value": 60 },
+        { "day": "S", "value": 70 },
+        { "day": "S", "value": 10 }
+      ]
+    },
+    {
+      "id": 3,
+      "userName": "John Doe",
+      "timeAgo": "2 h ago",
+      "user_icon": "/assets/client_user_3.png",
+      "status": "Completed",
+      "planType": "Strength Training",
+      "weekInfo": "Week 6/6",
+      "assignedWorkouts": [
+        { "type": "Full body", "icon": "/assets/full_body.png" },
+        { "type": "Cardio", "icon": "/assets/cardio.png" }
+      ],
+      "weekPerformance":  [
+        { "day": "M", "value": 20 },
+        { "day": "T", "value": 100 },
+        { "day": "W", "value": 40 },
+        { "day": "T", "value": 70 },
+        { "day": "F", "value": 90 },
+        { "day": "S", "value": 50 },
+        { "day": "S", "value": 80 }
+      ]
+    },
+    {
+      "id": 4,
+      "userName": "John Doe",
+      "timeAgo": "2 h ago",
+      "user_icon": "/assets/client_user_4.png",
+      "status": "Completed",
+      "planType": "Strength Training",
+      "weekInfo": "Week 6/6",
+      "assignedWorkouts": [
+        { "type": "Full body", "icon": "/assets/full_body.png" },
+        { "type": "Cardio", "icon": "/assets/cardio.png" }
+      ],
+      "weekPerformance":  [
+        { "day": "M", "value": 75 },
+        { "day": "T", "value": 35 },
+        { "day": "W", "value": 65 },
+        { "day": "T", "value": 95 },
+        { "day": "F", "value": 25 },
+        { "day": "S", "value": 85 },
+        { "day": "S", "value": 15 }
+      ]
+    },
+    {
+      "id": 5,
+      "userName": "John Doe",
+      "timeAgo": "2 h ago",
+      "user_icon": "/assets/client_user_1.png",
+      "status": "Completed",
+      "planType": "Strength Training",
+      "weekInfo": "Week 6/6",
+      "assignedWorkouts": [
+        { "type": "Full body", "icon": "/assets/full_body.png" },
+        { "type": "Core", "icon": "/assets/core.png" },
+        { "type": "Chest", "icon": "/assets/chest.png" }
+      ],
+      "weekPerformance":[
+        { "day": "M", "value": 55 },
+        { "day": "T", "value": 85 },
+        { "day": "W", "value": 10 },
+        { "day": "T", "value": 45 },
+        { "day": "F", "value": 30 },
+        { "day": "S", "value": 60 },
+        { "day": "S", "value": 90 }
+      ]
+    },
+    {
+      "id": 6,
+      "userName": "John Doe",
+      "timeAgo": "2 h ago",
+      "user_icon": "/assets/client_user_4.png",
+      "status": "Completed",
+      "planType": "Strength Training",
+      "weekInfo": "Week 6/6",
+      "assignedWorkouts": [
+        { "type": "Full body", "icon": "/assets/full_body.png" },
+        { "type": "Core", "icon": "/assets/core.png" }
+      ],
+      "weekPerformance":[
+        { "day": "M", "value": 12 },
+        { "day": "T", "value": 90 },
+        { "day": "W", "value": 18 },
+        { "day": "T", "value": 45 },
+        { "day": "F", "value": 75 },
+        { "day": "S", "value": 60 },
+        { "day": "S", "value": 5 }
+      ]
+    }
+  ]
+}

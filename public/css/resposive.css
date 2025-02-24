@@ -1,0 +1,38 @@
+@media screen and (max-width: 1200px) {
+  .SignUpPageImageContainer {
+    display: none;
+  }
+  .signHeader .mainText {
+    margin-left: 0rem;
+  }
+}
+
+/* sm media */
+@media screen and (max-width: 554px) {
+  .SignUpPageImageContainer {
+    display: none;
+  }
+  .signBtnWrrper {
+    margin-top: 5rem;
+  }
+  .lgHeading {
+    font-size: 2.2rem; 
+  }
+  .mainBtn { 
+    padding: 0.8rem 1rem; 
+    font-size: 1rem; 
+  }
+  /* clientCard */
+.clientCardWrapper {
+    flex-wrap: wrap;
+  }
+ .sinInPage .signUpMainContent{
+    padding: 1.5rem 1rem;
+  }
+  .SignUp .signUpMainContent{
+    padding: 1.5rem 1rem;
+    padding-bottom: 5rem;
+    padding-right: 1rem;
+  } 
+}
+
