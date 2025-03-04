@@ -40,10 +40,10 @@
   text-align: center;
   margin-bottom: 2rem;
 }
-.carousel-indicators {
+.PageSlider .carousel-indicators {
   margin-bottom: 3rem;
 }
-.carousel-indicators [data-bs-target] {
+.PageSlider .carousel-indicators [data-bs-target] {
   flex: 0 1 auto;
   width: 30px;
   height: 4px;
@@ -52,7 +52,7 @@
   border-radius: 12px;
   opacity: 1;
 }
-.carousel-indicators [data-bs-target].active {
+.PageSlider .carousel-indicators [data-bs-target].active {
   background: #20dc49;
 }
 .singInMobileContent {
