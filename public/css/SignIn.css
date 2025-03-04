@@ -241,6 +241,7 @@ inputArea::-webkit-outer-spin-button,
   color: var(--backcolor);
   font-weight: 400;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 .backArrow {
   transition: all 0.2s ease;

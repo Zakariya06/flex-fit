@@ -1,12 +1,11 @@
+import Link from "next/link";
+import { useState } from "react";
 
-import Link from "next/link"
-import { useState } from "react" 
-
-export default function ToggleForm() {
-  const [isChecked, setIsChecked] = useState(false)
+export default function ToggleForm({ Linkvalue="" }) {
+  const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <div className="d-flex justify-content-between align-items-center w-100 toggleFormContainer" >
+    <div className="d-flex justify-content-between align-items-center w-100 toggleFormContainer">
       <div className="form-check form-switch d-flex align-items-center gap-2">
         <input
           className={`form-check-input  toggleSwitch `}
@@ -20,10 +19,9 @@ export default function ToggleForm() {
           Remember me
         </label>
       </div>
-      <Link href={"/Sign_Up_Basic/set_password"} className={"recoverLink"}>
+      <Link href={Linkvalue ? Linkvalue : "/Sign_Up_Basic/set_password"} className={"recoverLink"}>
         Recover Password
       </Link>
     </div>
-  )
+  );
 }
-

@@ -1,0 +1,991 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.SignInMobilePage {
+  width: 100%;
+  min-height: 100vh;
+}
+.SignInMobilePageWrrper {
+  background-color: #fff;
+  min-height: 100vh;
+}
+.SignInMobilePage .mainBtn.active {
+  padding: 0.7rem 1rem;
+}
+.SignInMobilePage .backLink:hover {
+  color: #00e676;
+}
+.SignInMobilePage .backLink:hover .backArrow {
+  margin-right: 0;
+  filter: brightness(0) saturate(100%) invert(60%) sepia(77%) saturate(1167%)
+    hue-rotate(101deg) brightness(98%) contrast(104%);
+}
+.PageSlider {
+  width: 100%;
+  height: 395px;
+  position: relative;
+  z-index: 1;
+}
+.pageCarousel {
+  width: 100%;
+  height: 100%;
+}
+.pageSliderImage {
+  width: 100%;
+  object-fit: cover;
+}
+.PageSlider .mdHeading {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.carousel-indicators {
+  margin-bottom: 3rem;
+}
+.carousel-indicators [data-bs-target] {
+  flex: 0 1 auto;
+  width: 30px;
+  height: 4px;
+  background: #777777;
+  border: none;
+  border-radius: 12px;
+  opacity: 1;
+}
+.carousel-indicators [data-bs-target].active {
+  background: #20dc49;
+}
+.singInMobileContent {
+  background: #ffffff;
+  border-radius: 16px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-top: -1.4rem;
+  position: relative;
+  z-index: 2;
+}
+.SignInMobilePage .lgHeading {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2b2b2b;
+}
+.SignInMobilePage .lgHeading .FlexFitlogoline {
+  width: 1rem;
+  height: auto;
+}
+.singInMobileContent .mainText {
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.7rem;
+}
+.singInMobileContent .inputHolder {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+.singInMobileContent label {
+  font-size: 0.9rem;
+}
+.singInMobileContent .inputArea {
+  font-size: 0.9rem;
+}
+.singInMobileContent .toggleFormContainer {
+  flex-wrap: wrap;
+  row-gap: 0.3rem;
+}
+.singInMobileContent .recoverLink {
+  font-weight: 300;
+  font-size: 0.86rem;
+}
+.singInMobileContent .form-check-label {
+  font-weight: 400;
+  font-size: 0.86rem;
+}
+.singInMobileContent .socialAuthBtns {
+  padding: 0 3rem;
+}
+.singInMobileContent .socialAuthBtns .mainBtn {
+  padding: 0.7rem 1rem;
+  flex: 1;
+  font-size: 0.9rem;
+}
+.singInMobileContent .socialAuthBtns .mainBtn img {
+  width: 1.5rem;
+  height: auto;
+}
+.phoneInputHolders .optionInputHolder {
+  padding: 0.6rem 0.3rem;
+}
+.phoneInputHolders .optionInputHolder label {
+  font-size: 0.9rem;
+  @media (max-width: 350px) {
+    font-size: 0.83rem;
+  }
+}
+
+/* weightPageHead */
+.weightPageHead .backArrow {
+  width: 1rem;
+  height: auto;
+}
+.weightPageHead .backLink {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+/* weightTabs */
+.weightTabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  background: #efefef;
+  border-radius: 14px;
+  padding: 0.4rem;
+}
+.weightTabs .mainBtn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.weightTabs .mainBtn:hover,
+.weightTabs .mainBtn.active {
+  background: #ffffff;
+}
+
+/* ruler container */
+.rulerContainer {
+  width: 100%;
+  margin: 1.6rem auto;
+  user-select: none;
+}
+.rulerWrapper {
+  position: relative;
+  width: 100%;
+  cursor: grab;
+  user-select: none;
+}
+.rulerWrapper:active {
+  cursor: grabbing;
+}
+.rulerNumbersContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: white;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.rulerNumber {
+  font-size: 24px;
+  color: #aaaaaa;
+  width: 60px;
+  text-align: center;
+  position: absolute;
+  transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+.rulerNumberActive {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333333;
+}
+.rulerTicksContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+}
+.rulerTick {
+  width: 1px;
+  margin: 0 6px;
+  background: #dedede;
+  transition: transform 0.3s ease;
+}
+.rulerTickLarge {
+  height: 30px;
+}
+.rulerTickSmall {
+  height: 20px;
+}
+.rulerIndicatorLine {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #00e676;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.rulerIndicatorSection {
+  height: 60px;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rulerTriangleIndicator {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid #00e676;
+  transition: transform 0.2s ease;
+}
+.rulerValueDisplay {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  cursor: text;
+}
+.rulerValueText {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #333333;
+  display: flex;
+  align-items: baseline;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.rulerValueText.changing {
+  transform: scale(1.05);
+}
+.rulerValueInputWrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.rulerValueInput {
+  font-size: 60px;
+  font-weight: bold;
+  color: #333333;
+  width: 150px;
+  border: none;
+  border-bottom: 2px solid #00e676;
+  text-align: center;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+.rulerValueInput::-webkit-outer-spin-button,
+.rulerValueInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.rulerUnitText {
+  font-size: 24px;
+  margin-left: 10px;
+  color: #666666;
+}
+/* Add animation for value changes */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.valueChanging {
+  animation: pulse 0.3s ease;
+}
+
+.trakLines {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* height ruler */
+.HeightRuler {
+  position: relative;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+  row-gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rulerRangeLineContainer {
+  width: 100px;
+
+  row-gap: 1rem;
+  background: #2b2b2b;
+  border-radius: 10px;
+  cursor: grab;
+  padding: 1rem 0;
+  position: relative;
+}
+.trakLinkeParent {
+  width: 100%;
+  max-height: 250px;
+  overflow: hidden;
+}
+.heightTraks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  position: relative;
+  z-index: 22;
+}
+.heightTrakLine {
+  width: 30%;
+  height: 1px;
+  background: #ffffff;
+}
+.heightTraks .heightTrakLine:nth-child(5n) {
+  width: 50%;
+  height: 1.5px;
+}
+.mainTrakLine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 4px;
+  background: #20dc49;
+  z-index: 2;
+}
+.mainTrakArrow {
+  position: absolute;
+  top: 50%;
+  right: -30%;
+  transform: translate(-50%, -50%);
+}
+.trakNumberContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.trakNumberContainer .trakNumber {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #676464;
+  transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+.trakNumberContainer .trakNumber.rulerNumberActive {
+  color: #2b2b2b;
+  font-size: 2.3rem;
+}
+
+/* workoutExperienceItem */
+.workoutExperienceItem {
+  padding: 0.9rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #0000003b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.workoutExperienceItem:hover {
+  border-color: #00e676;
+}
+.experienceRadio {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 1px solid #c4c4c4;
+  cursor: pointer;
+  accent-color: #20dc49;
+}
+
+/* workoutExperienceContainer */
+.workoutExperienceContainer {
+  margin-bottom: 5rem;
+}
+
+/* EquipmentPage */
+.EquipmentPage .lgHeading {
+  margin-bottom: 0.3rem;
+}
+.EquipmentPage .mainText {
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  color: #2b2b2b;
+}
+
+/* equipmentContentContainer */
+.equipmentContentContainer {
+  margin: 2rem 0;
+}
+.equipmentContentContainer .mdHeading {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2b2b2b;
+  margin-bottom: 0.5rem;
+}
+.equipmentPageContent {
+  border: 1px solid #0000003b;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+.equipmentContentItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.equipmentContentItem:last-child {
+  margin-bottom: 0;
+}
+.equipmentContentItemImage {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+/* equipmentContentItemCheckbox */
+.equipmentContentItemCheckbox {
+  width: 1.3em;
+  height: 1.3em;
+  cursor: pointer;
+  accent-color: #20dc49;
+}
+
+/* ------------------------------------- ClientDashboardMobilePage -----------------------------  */
+.ClientDashboardMobilePage {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  padding-bottom: 8rem;
+}
+
+/* FooterBar */
+.FooterBar {
+  background: #192126;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 32%;
+  width: 100%;
+  @media (max-width: 992px) {
+    max-width: 64%;
+  }
+  @media (max-width: 768px) {
+    max-width: 80%;
+  }
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
+}
+.footerBarLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.8rem;
+  gap: 0.7rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.footerBarLinks:hover,
+.footerBarLinks.active {
+  background: #20dc49;
+  color: #000000;
+}
+.footerBarlinkHomeImg {
+  filter: invert(1);
+}
+.footerBarLinks:hover .footerBarlinkHomeImg,
+.footerBarLinks.active .footerBarlinkHomeImg {
+  filter: invert(0);
+}
+.footerBarLinks:hover .footerBarlinkImg,
+.footerBarLinks.active .footerBarlinkImg {
+  filter: invert(1);
+}
+/* ClientDashboardMobilePageColWrapper */
+.ClientDashboardMobilePageColWrapper {
+  padding: 1rem 0.8rem;
+}
+.ClientDashboardMobilePageColWrapper .profileHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #192126;
+  margin-bottom: 2em;
+}
+.ClientDashboardMobilePageColWrapper .profileHeader .profileText .mdHeading {
+  font-weight: 600;
+  font-size: 14px;
+}
+.ClientDashboardMobilePageColWrapper .profileHeader .profileText .lgHeading {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.ClientDashboardMobilePageColWrapper .profileHeader .profileImageImg {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 37px;
+  height: 37px;
+}
+.ClientDashboardMobilePageColWrapper
+  .profileHeader
+  .profileImage
+  .onlineStatus {
+  width: 8px;
+  height: 8px;
+  background: #20dc49;
+  border-radius: 50%;
+}
+
+.warningCard {
+  border-left: 2px solid #ff4925;
+  border-radius: 4px;
+  padding: 1rem 1rem;
+  background: #fff9e2;
+}
+.warningCard .mdHeading {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #ff4925;
+}
+.warningCard .mainText {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #2b2b2b;
+  margin-top: 0.5rem;
+}
+.warningCard .closewarning {
+  font-size: 1.2rem;
+  color: #2b2b2b;
+  cursor: pointer;
+}
+
+/* workDaysTabsContainer */
+.ClientDashboardMobilePageColWrapper .workDaysTabsContainer {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+.ClientDashboardMobilePageColWrapper .workDaysTabsContainer .workDayTab {
+  background: #ebebeb;
+  border-radius: 10px;
+  padding: 0.5rem 0.3rem;
+  flex: 1;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.3;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 0.86rem;
+  color: #192126;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+.ClientDashboardMobilePageColWrapper .workDaysTabsContainer .workDayTab:hover,
+.ClientDashboardMobilePageColWrapper .workDaysTabsContainer .workDayTab.active {
+  background: #20dc49;
+  color: #ffffff;
+}
+.ClientDashboardMobilePageColWrapper
+  .workDaysTabsContainer
+  .workDayTab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #20dc49;
+  border-radius: 50%;
+}
+
+/* workoutPlanContainer */
+.workoutPlanContainer .mdHeading {
+  color: #192126;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+.workPlanCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: #ffffff;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.chestText {
+  font-weight: 400;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background: #192126;
+  color: #ffffff;
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  transform: translateX(-50%);
+}
+.workoutPlanContainer .workPlanCardImg {
+  max-width: 94px;
+  height: auto;
+  border-radius: 10px;
+}
+.workoutPlanContainer .workPlanRightContent {
+  flex: 1;
+}
+.workoutPlanContainer .workPlanRightContent .mdHeading {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+}
+.workoutPlanContainer .workPlanRightContent .mainText {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #8c8c8c;
+  margin-top: 0.3rem;
+}
+.workoutPlanContainer .workPlanRightContent .progress-bar {
+  background: #20dc49;
+  font-weight: 500;
+  font-size: 8px;
+  color: #192126;
+}
+
+/* benchPressPage */
+.clientDshboardbackLink {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #2b2b2b;
+  cursor: pointer;
+  user-select: none;
+}
+.clientDshboardbackLink:hover {
+  color: #20dc49;
+}
+.clientDshboardbackLink:hover img {
+  filter: brightness(0) saturate(100%) invert(60%) sepia(77%) saturate(1167%)
+    hue-rotate(101deg) brightness(98%) contrast(104%);
+}
+
+/* VideoContentSection */
+.VideoContentSection {
+  position: relative;
+  margin-bottom: 4rem;
+}
+/* videoContainer */
+.videoContainer {
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.videoContent {
+  width: 100%;
+  height: auto;
+}
+.videoPlayingControlWrrper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    0.68deg,
+    #1d1d1d -5.12%,
+    rgba(104, 104, 104, 0) 80.66%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.videoIcon {
+  font-size: 3rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.videoIcon:hover {
+  opacity: 0.8;
+}
+
+.setsContainer {
+  border: 0.5px solid #f4ffdd4a;
+  backdrop-filter: blur(6px);
+  background: #192126b2;
+  border-radius: 10px;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 85%;
+  @media (max-width: 355px) {
+    width: 95%;
+    padding: 0.5rem;
+  }
+}
+.setsContainer .setsContainerContent {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  width: 100%;
+}
+.border-right {
+  border-right: 1px solid #ffffff40;
+}
+.setsContainer .setsContainerContent .mdHeading {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+}
+.setsContainer .setsContainerContent .mainText {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+}
+.BenchPressTextContent .mdHeading {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2b2b2b;
+}
+.BenchPressTextContent .mainText {
+  font-weight: 400;
+  font-size: 0.82rem;
+  color: #2b2b2b80;
+  margin-top: 0.3rem;
+}
+
+/* BenchEqupmentsSection */
+.BenchEqupmentsSection {
+  margin: 2rem 0;
+}
+.BenchEqupmentsSection .mdHeading {
+  color: #2b2b2b;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+/* benchEqupmentCard */
+.benchEqupmentCard {
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.benchEqupmentCard:hover {
+  transform: translateY(-3px);
+}
+.benchEqupmentCard .mainText {
+  font-weight: 400;
+  font-size: 10px;
+  color: #2b2b2b;
+  margin-top: 0.4rem;
+}
+
+/* set Section */
+.setCardContentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.setCardContentWrapper:last-child {
+  margin-bottom: 0;
+}
+.setCardContentWrapper .cardCheckBox {
+  position: relative;
+}
+.cardConnetLine {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 300%;
+  background: #ebebeb;
+}
+.customCardCheckBox {
+  border: 2px solid #ebebeb;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.setSection .workPlanCard {
+  padding: 1rem 0.8rem;
+  flex: 1;
+  margin: 0;
+  cursor: pointer;
+}
+.setSection .workPlanCard:hover {
+  border-color: #00e676;
+}
+.setSection .equipmentContentItemCheckbox {
+  border-radius: 50%;
+}
+.setSection .workPlanCard .mainBtn {
+  width: auto;
+  padding: 0.1rem 0.4rem;
+  font-weight: 500;
+  font-size: 10px;
+  color: #192126;
+  border-radius: 4px;
+}
+.setSection .workPlanRightContent {
+  width: 100%;
+}
+.setSection .workPlanRightContent .mdHeading {
+  margin: 0;
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+}
+.setSection .workPlanRightContent .mainText {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #8c8c8c;
+}
+.setCardButtonWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* setTimerSection */
+.setTimerContent {
+  padding: 4rem 0;
+  text-align: center;
+}
+.setTimerLeftContent {
+  position: relative;
+}
+.timerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+.timerCircleSvg {
+  height: 150px;
+  transform: rotate(-90deg);
+  width: 150px;
+}
+.progress-bar__background {
+  fill: none;
+  stroke: #e2eff0;
+  stroke-width: 2;
+}
+.progress-bar__progress {
+  fill: none;
+  stroke: #ebebeb;
+  stroke: #00e676;
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 100;
+  stroke-linecap: round;
+  stroke-width: 1.8;
+  transition: stroke-dashoffset 1s linear;
+}
+.setTimeinfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #2b2b2b80;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.setTimeinfo .infoIcon {
+  font-size: 2rem;
+  flex: 0 0 2rem;
+}
+
+/* canvas */
+.workoutFeedbackCanvas {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.workoutFeedbackHeader {
+  text-align: center;
+}
+.workoutFeedbackHeader .mdHeading {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.workoutFeedbackHeader .mainText {
+  font-weight: 400;
+  font-size: 13px;
+  color: #2b2b2b80;
+}
+/* emojiesContainer */
+.emojiesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+.emojie {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.emojie:hover,
+.emojie.active {
+  opacity: 0.3;
+}

@@ -11,7 +11,7 @@ const Input = forwardRef(function MyInput({
     const id = useId()
      return (
         <div ref={ref} className={`inputHolder  ${className} `}>
-            <input type={type} placeholder={placeholder} className={`inputArea`} id={id} {...props} />
+            <input type={type} placeholder={placeholder} className={`inputArea`} id={id} {...props}  />
             {label && <label className="inputLable" htmlFor={id} >{label}</label> }
         </div>
      )
